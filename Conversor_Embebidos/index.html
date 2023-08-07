@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <div class="Cabeza">
+        <div class="Logo">
+            <img class="Logo_u" src="Imagenes/logo-universidad-ecci.png" alt="Logo" width="120" height="120">
+           
+            </div>
+        <div class="Encabezado">
+            <h1 class="Titulo">Ingeniería Mecatrónica</h1>
+           
+        </div>
+    </div>
+    <div class="contenedor">
+        <h1>Conversor Numérico</h1>
+        <div class="conversion-contenedor">
+            <label for="conversion-type">Seleccione el tipo de conversión:</label>
+            <select class="menul" id="menu">
+                <option value="binario_hexadecimal">Binario a Hexadecimal</option>
+                <option value="binario_decimal">Binario a Decimal</option>
+                <option value="decimal_hexadecimal">Decimal a Hexadecimal</option>
+                <option value="hexadecimal_binario">Hexadecimal a Binario</option>
+                <option value="hexadecimal_decimal">Hexadecimal a Decimal</option>
+            </select>
+        </div>
+        <div class="input-contenedor">
+            <label for="input-number">Ingrese el número:</label>
+            <input class="Cajas" type="text" id="numero">
+        </div>
+        <div class="output-contenedor">
+            <label  for="output-result">Resultado:</label>
+            <input class="Cajas" type="text" id="resultado" readonly>
+        </div>
+        <button onclick="convert()">Convertir</button>
+    </div>
+    <script src="Codigo.js"></script>
+    
+</body>
+</html>
