@@ -13,7 +13,8 @@ function convert() {
         outputResult.value = hexadecimal_a_binario(inputNumber);
     } else if (conversionType === "hexadecimal_decimal") {
         outputResult.value = hexadecimal_a_decimal(inputNumber);
-    }
+    }else if (conversionType === "decimal_Binario") {
+        outputResult.value = decimal_a_Binario(inputNumber);
 }
 
 function binario_a_hexadecimal(binario) {
@@ -36,4 +37,8 @@ function hexadecimal_a_binario(hexadecimal) {
 
 function hexadecimal_a_decimal(hexadecimal) {
     return parseInt(hexadecimal, 16).toString();
+}
+function decimal_a_Binario(decimal) {
+    return parseInt(decimal).toString(2);
+}
 }
